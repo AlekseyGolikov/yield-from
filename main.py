@@ -8,8 +8,9 @@ def gen1():
 def gen2():
     yield 9000
 
-    for i in gen1():
-        yield i
+    # for i in gen1():
+    #     yield i
+    yield from gen1()
 
     yield 9999
 
